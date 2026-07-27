@@ -12,11 +12,6 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
